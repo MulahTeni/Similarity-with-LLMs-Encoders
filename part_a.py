@@ -17,7 +17,6 @@ def average_pool(last_hidden_states: torch.Tensor, attention_mask: torch.Tensor)
 
 def get_embeddings(model_name, texts):
     if model_name == "jinaai/jina-embeddings-v3":
-        tokenizer = AutoTokenizer.from_pretrained(model_name)
         model = AutoModel.from_pretrained(model_name, trust_remote_code=True)
         embeddings = model.encode(texts, task="text-matching")
         return embeddings

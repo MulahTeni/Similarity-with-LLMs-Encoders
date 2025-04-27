@@ -1,0 +1,4 @@
+Model,GPT4o Top-1,GPT4o Top-5,DeepSeek Top-1,DeepSeek Top-5
+e5,0.838,0.939,0.779,0.911
+cosmosE5,0.777,0.941,0.724,0.887
+jina,0.862,0.947,0.805,0.916
